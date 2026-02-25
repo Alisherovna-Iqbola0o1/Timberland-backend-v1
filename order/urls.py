@@ -9,6 +9,7 @@ from .views import (
 urlpatterns = [
     path("user-cart/", UserCartListCreateAPIView.as_view()),
     path("user-cart/<int:pk>/", UserCartUpdateAPIView.as_view()),
+
     path("user-order/", UserOrderCreateApiView.as_view()),
     path("user-order/<int:pk>/", UserOrderDetailAPIView.as_view()),
 ]
